@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header id="home" class="py-3 md:py-6">
+    <div class="container mx-auto flex justify-between px-8 md:px-16 lg:px-24 w-full">
+        <!-- Logo -->
+        <div>
+            <a href="#home" class="text-3xl font-bold hover:text-blue-400 ease-in-out delay-150"><span>Ismail.</span><span class="italic">dev</span></a>
+        </div>
+        <!-- Navigation -->
+        <div class="hidden md:flex space-x-12 items-center">
+            <a href="#home" class="hover:text-blue-400 ease-in-out delay-150">Home</a>
+            <a href="#work" class="hover:text-blue-400 ease-in-out delay-150">My Work</a>
+            <a href="#clients" class="hover:text-blue-400 ease-in-out delay-150">Clients</a>
+            <!-- Button -->
+            <a href="#hire"><button class="bg-blue-400 px-6 py-2 hover:bg-blue-100 hover:text-body rounded">Hire Me</button></a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none mt-2">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 bg-blue-400 rounded font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#home" class="hover:text-body">Home</a>
+            <a href="#work" class="hover:text-body">My Work</a>
+            <a href="#clients" class="hover:text-body">Clients</a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="py-3 md:py-6">
+    <!-- Flex Contianer -->
+    <div class="container mx-auto flex flex-col-reverse items-center px-8 md:px-16 lg:px-24 w-full mt-10 space-y-0 md:space-y-0 md:flex-row">
+        <!-- Left Item -->
+        <div class="flex flex-col mb-32 space-y-5 md:space-y-7 md:w-1/2">
+            <h1 class="max-w-md text-4xl font-bold text-center py-3 md:text-5xl md:text-left text-purple-900">
+                Hey, Ismail here! I'm a <span class="text-blue-400">website</span> developer.
+            </h1>
+
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                I've had the pleasure of working with multiple companies to design and implement their websites.
+            </p>
+
+             <div class="flex justify-center md:justify-start">
+                <a href="#" class="p-3 px-6 pt-2 text-black bg-blue-400 rounded hover:bg-blue-100">
+                    Hire me
+                </a>
+             </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+            <img src="./images/Hero Image.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- My Work Section -->
+<section id="work" class="container py-3 md:py-6 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="w-full">
+        <div class="border-t-theme bg-blue-400 w-10 h-1 rounded-sm"></div>
+        <h2 id="work" class="font-bold text-3xl">
+            My work
+        </h2>
+        <p class="text-secondary my-6 w-full max-w-3xl">
+            I've had the pleasure of working with multiple companies to design and implement their websites..
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <a href="https://ujenzi.netlify.app/" class="hover:animate-pulse" target="_blank"><img src="./images/1.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/2.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/3.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/4.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/5.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/6.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/7.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/8.png"></a>
+            <a href="" class="hover:animate-pulse" target="_blank"><img src="./images/9.png"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Clients section -->
+<div id="clients" class="container py-3 md:py-6 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+        <div class="border-t-theme bg-blue-400 w-10 h-1 rounded-sm"></div>
+        <h2 id="clients" class="font-bold text-3xl">Clients</h2>
+        <p class="text-secondary my-6 w-full max-w-3xl">I've had the pleasure of working with multiple companies, designing and implementing frontEnd.</p>
+
+        <div class="space-y-12 my-16">
+            <div class="w-full border border-blue-400 p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="mb-6 lg:mb-0">
+                    <img src="./images/ujenziwakisasa.png" class="rounded" alt="ujenziwakisasa logo">
+                </div>
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                    <h3 class="text-3xl font-semibold">Ujenzi wa kisasa, inc</h3>
+
+                    <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                        <div class="bg-blue-400 p-1 rounded-sm">UI/UX</div>
+                        <div class="bg-blue-400 p-1 rounded-sm">Frontend development</div>
+                    </div>
+                    <p class="text-secondary">I've had the pleasure of working with ujenziwakisasa to design and implement website it's website..</p>
+                </div>
+            </div>
+        </div>
+        <div class="space-y-12 my-16">
+            <div class="w-full border border-blue-400 p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="mb-6 lg:mb-0">
+                    <i class="fa-brands fa-blackberry text-7xl"></i>
+                </div>
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                    <h3 class="text-3xl font-semibold">Blackberry, inc</h3>
+
+                    <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                        <div class="bg-blue-400 p-1 rounded-sm">UI/UX</div>
+                        <div class="bg-blue-400 p-1 rounded-sm">Frontend development</div>
+                    </div>
+                    <p class="text-secondary">I've had the pleasure of working with multiple Fortune 500 companies, designing and implementing frontend.</p>
+                </div>
+            </div>
+        </div>
+        <div class="space-y-12 my-16">
+            <div class="w-full border border-blue-400 p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                <div class="mb-6 lg:mb-0">
+                    <i class="fa-brands fa-android text-7xl"></i>
+                </div>
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                    <h3 class="text-3xl font-semibold">Android, inc</h3>
+
+                    <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                        <div class="bg-blue-400 p-1 rounded-sm">UI/UX</div>
+                        <div class="bg-blue-400 p-1 rounded-sm">Frontend development</div>
+                    </div>
+                    <p class="text-secondary">I've had the pleasure of working with multiple Fortune 500 companies, designing and implementing frontend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Contact Us-->
+<div id="hire" class="container mt-32 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+        <div class="border-t-theme bg-theme w-10 h-1 rounded-sm"></div>
+        <h2 id="hire" class="font-bold text-3xl">Hire me</h2>
+        <p class="text-secondary my-6 w-full max-w-3xl">
+            Feel free to contact me at any time, through any 
+        </p>
+
+        <div class="w-full grid lg:grid-cols-2 lg:gap-32 mt-24">
+            <form class="space-y-12">
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Name</label>
+                    <input type="text" id="name" required class="w-full border border-blue-400 px-4 py-4">
+                </div>
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Email</label>
+                    <input type="email" id="email" required class="w-full border border-blue-400 px-4 py-4">
+                </div>
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Message</label>
+                    <textarea id="message" class="w-full border border-blue-400 px-4 py-4"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 font-bold rounded-xl hover:bg-blue-100 hover:text-body">Send it</button>
+            </form>
+
+            <div class="mt-12">
+                <div class="flex space-x-3 items-center">
+                    <div><i class="fa-solid fa-phone text-2xl"></i></div>
+                    <a href="tel:+255 754 821 511" target="_blank" class="text-secondary">+255 754 821 511</a>
+                </div>
+                
+                <div class="flex space-x-3 items-center">
+                    <div><i class="fa-solid fa-envelope text-2xl"></i></div>
+                    <div><a href="mailto:misanya166@gmail.com/" target="_blank" class="text-secondary underline mt-2">misanya166@gmail.com</a></div>
+                </div>
+                
+
+                <div class="flex mt-20 space-x-6">
+                    <a href="skype:live:.cid.cef3e497872853ba?chat" target="_blank">
+                        <i class="fa-brands fa-skype text-4xl hover:text-blue-400"></i>
+                    </a>
+                    <a href="https://www.twitter.com/@IsmailMisanya/" target="_blank">
+                        <i class="fa-brands fa-twitter text-4xl hover:text-blue-400"></i>
+                    </a>
+                    <a href="https://www.instagram.com/officialesmael/" target="_blank">
+                        <i class="fa-brands fa-instagram text-4xl hover:text-red-500"></i>
+                    </a>
+                    <a href="https://wa.me/255717553989" target="_blank">
+                        <i class="fa-brands fa-whatsapp text-4xl hover:text-green-700"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- footer -->
+<div class="flex justify-center items-center mt-16 bg-input text-white py-2">
+    <div><a href="#home" class="text-xl font-bold hover:text-theme"><span>Ismail.</span><span class="italic">dev</span></a></div>
+    <p class="ml-5 text-xs">© Copy rights 2022 by ismaildev.co.tz</p>
+</div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
