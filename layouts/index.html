@@ -164,7 +164,21 @@
         </p>
 
         <div class="w-full grid lg:grid-cols-2 lg:gap-32 mt-24">
-            <script type="text/javascript" src="https://form.jotform.com/jsform/222342796088060"></script>
+            <form name="contact" method="post" data-netlify="true" onSubmit="submit" class="space-y-12">
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full border border-input-border bg-input px-4 py-4">
+                </div>
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full border border-input-border bg-input px-4 py-4">
+                </div>
+                <div>
+                    <label class="block mb-6 text-xl font-bold">Message</label>
+                    <textarea id="message" name="message" class="w-full border border-input-border bg-input px-4 py-4"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 font-bold rounded-xl hover:bg-white hover:text-body">Send it</button>
+            </form>
 
             <div class="mt-12">
                 <div class="flex space-x-3 items-center">
